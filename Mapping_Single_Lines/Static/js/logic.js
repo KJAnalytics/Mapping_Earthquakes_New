@@ -1,4 +1,4 @@
-// Get data from cities.js
+ // Get data from cities.js
 let cityData = cities;
 
 // Create the map object with a center and zoom level.
@@ -24,10 +24,3 @@ cityData.forEach(function(city) {
   .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3>")
 .addTo(map);
 });
-
-// Console log to check if the code is working
-console.log('test');
-
-// Create the map object with a center and zoom level of 14 (L. because it is a leaflet function)
-let map= L.map('mapid').setView([34.0522, -118.2437], 14);
-
